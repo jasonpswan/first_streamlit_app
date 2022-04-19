@@ -21,3 +21,5 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 # Add a pick list for them to choose the fruit for their smoothie
 fruits_selected = ("Pick some fruit:", list(my_fruit_list.index), ["Avocado", "Strawberries"])
 fruits_to_show = my_fruit_list.loc[fruits_selected]
+
+streamlit.dataframe(fruits_to_show)
