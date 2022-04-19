@@ -21,3 +21,6 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 
 # Add a pick list so they can choose what they want in their smoothie
 streamlit.multiselect("Pick some fruit:", list(my_fruit_list.index))
+
+# Display the data set so they can see which fruit (and portion sizes) we have available
+streamlit.dataframe(my_fruit_list)
