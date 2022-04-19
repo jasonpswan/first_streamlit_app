@@ -23,4 +23,4 @@ fruits_selected = ("Pick some fruit:", list(my_fruit_list.index), ["Avocado", "S
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 # Display the data set so they can see which fruit (and portion sizes) we have available
-streamlit.dataframe(list(fruits_to_show))
+streamlit.dataframe(fruits_to_show)
