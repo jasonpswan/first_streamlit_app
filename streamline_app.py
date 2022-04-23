@@ -45,9 +45,6 @@ except URLError as e:
 # streamlit.write('The user entered', fruit_choice)
 # streamlit.text(fruityvice_response.json())
 
-# wont run code below
-streamlit.stop()
-
 
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
